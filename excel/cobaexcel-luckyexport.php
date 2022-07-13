@@ -933,7 +933,6 @@ if(isset($_SERVER) && isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_MET
                 $objDrawing->setOffsetY($pos_y_default); // this function has no effect 
                 $objDrawing->setHeight($height_crop);
                 $objDrawing->setWidth($width_crop);
-                
                 echo $pos_x_default . "\n";
                 echo $pos_y_default . "\n";
             }
