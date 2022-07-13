@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+<Override PartName="/xl/theme/theme1.xml" ContentType="application/vnd.openxmlformats-officedocument.theme+xml"/>
+<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>
+<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
+<Default Extension="xml" ContentType="application/xml"/>
+<Default Extension="vml" ContentType="application/vnd.openxmlformats-officedocument.vmlDrawing"/>
+<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>
+<Override PartName="/docProps/app.xml" ContentType="application/vnd.openxmlformats-officedocument.extended-properties+xml"/>
+<Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/>
+<Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>
+<Override PartName="/xl/worksheets/sheet2.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>
+<Override PartName="/xl/worksheets/sheet3.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>
+<Override PartName="/xl/sharedStrings.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sharedStrings+xml"/>
+<Override PartName="/xl/drawings/drawing1.xml" ContentType="application/vnd.openxmlformats-officedocument.drawing+xml"/>
+<Default Extension="jpeg" ContentType="image/jpeg"/></Types>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+<Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties" Target="docProps/app.xml"/>
+<Relationship Id="rId2" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="docProps/core.xml"/>
+<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/>
+</Relationships>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>
+<Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme" Target="theme/theme1.xml"/>
+<Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/sharedStrings" Target="sharedStrings.xml"/>
+<Relationship Id="rId4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/>
+<Relationship Id="rId5" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet2.xml"/>
+<Relationship Id="rId6" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet3.xml"/>
+</Relationships>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
+<Application>Microsoft Excel</Application>
+<DocSecurity>0</DocSecurity>
+<ScaleCrop>false</ScaleCrop>
+<HeadingPairs>
+<vt:vector size="2" baseType="variant">
+<vt:variant>
+<vt:lpstr>Worksheets</vt:lpstr>
+</vt:variant>
+<vt:variant>
+<vt:i4>3</vt:i4>
+</vt:variant>
+</vt:vector>
+</HeadingPairs>
+<TitlesOfParts>
+<vt:vector size="3" baseType="lpstr">
+<vt:lpstr>Sheet1</vt:lpstr>
+<vt:lpstr>Sheet2</vt:lpstr>
+<vt:lpstr>Sheet3</vt:lpstr>
+</vt:vector>
+</TitlesOfParts>
+<Company>Microsoft Corporation</Company>
+<Manager></Manager>
+<LinksUpToDate>false</LinksUpToDate>
+<SharedDoc>false</SharedDoc>
+<HyperlinksChanged>false</HyperlinksChanged>
+<AppVersion>12.0000</AppVersion>
+</Properties>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<dc:creator>Luckyexcel YKKBI</dc:creator>
+<cp:lastModifiedBy>Luckyexcel YKKBI</cp:lastModifiedBy>
+<dcterms:created xsi:type="dcterms:W3CDTF">2022-07-13T12:33:04+02:00</dcterms:created>
+<dcterms:modified xsi:type="dcterms:W3CDTF">2022-07-13T12:33:04+02:00</dcterms:modified>
+<dc:title>Luckyexcel YKKBI</dc:title>
+<dc:description>Luckyexcel YKKBI</dc:description>
+<dc:subject>Luckyexcel YKKBI</dc:subject>
+<cp:keywords>Luckyexcel YKKBI</cp:keywords>
+<cp:category></cp:category>
+</cp:coreProperties>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<a:theme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="Office Theme">
+<a:themeElements>
+<a:clrScheme name="Office">
+<a:dk1>
+<a:sysClr val="windowText" lastClr="000000"/>
+</a:dk1>
+<a:lt1>
+<a:sysClr val="window" lastClr="FFFFFF"/>
+</a:lt1>
+<a:dk2>
+<a:srgbClr val="1F497D"/>
+</a:dk2>
+<a:lt2>
+<a:srgbClr val="EEECE1"/>
+</a:lt2>
+<a:accent1>
+<a:srgbClr val="4F81BD"/>
+</a:accent1>
+<a:accent2>
+<a:srgbClr val="C0504D"/>
+</a:accent2>
+<a:accent3>
+<a:srgbClr val="9BBB59"/>
+</a:accent3>
+<a:accent4>
+<a:srgbClr val="8064A2"/>
+</a:accent4>
+<a:accent5>
+<a:srgbClr val="4BACC6"/>
+</a:accent5>
+<a:accent6>
+<a:srgbClr val="F79646"/>
+</a:accent6>
+<a:hlink>
+<a:srgbClr val="0000FF"/>
+</a:hlink>
+<a:folHlink>
+<a:srgbClr val="800080"/>
+</a:folHlink>
+</a:clrScheme>
+<a:fontScheme name="Office">
+<a:majorFont>
+<a:latin typeface="Cambria"/>
+<a:ea typeface=""/>
+<a:cs typeface=""/>
+<a:font script="Jpan" typeface="ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯"/>
+<a:font script="Hang" typeface="ë§‘ì€ ê³ ë”•"/>
+<a:font script="Hans" typeface="å®‹ä½“"/>
+<a:font script="Hant" typeface="æ–°ç´°æ˜Žé«”"/>
+<a:font script="Arab" typeface="Times New Roman"/>
+<a:font script="Hebr" typeface="Times New Roman"/>
+<a:font script="Thai" typeface="Tahoma"/>
+<a:font script="Ethi" typeface="Nyala"/>
+<a:font script="Beng" typeface="Vrinda"/>
+<a:font script="Gujr" typeface="Shruti"/>
+<a:font script="Khmr" typeface="MoolBoran"/>
+<a:font script="Knda" typeface="Tunga"/>
+<a:font script="Guru" typeface="Raavi"/>
+<a:font script="Cans" typeface="Euphemia"/>
+<a:font script="Cher" typeface="Plantagenet Cherokee"/>
+<a:font script="Yiii" typeface="Microsoft Yi Baiti"/>
+<a:font script="Tibt" typeface="Microsoft Himalaya"/>
+<a:font script="Thaa" typeface="MV Boli"/>
+<a:font script="Deva" typeface="Mangal"/>
+<a:font script="Telu" typeface="Gautami"/>
+<a:font script="Taml" typeface="Latha"/>
+<a:font script="Syrc" typeface="Estrangelo Edessa"/>
+<a:font script="Orya" typeface="Kalinga"/>
+<a:font script="Mlym" typeface="Kartika"/>
+<a:font script="Laoo" typeface="DokChampa"/>
+<a:font script="Sinh" typeface="Iskoola Pota"/>
+<a:font script="Mong" typeface="Mongolian Baiti"/>
+<a:font script="Viet" typeface="Times New Roman"/><a:font script="Uigh" typeface="Microsoft Uighur"/>
+<a:font script="Geor" typeface="Sylfaen"/>
+</a:majorFont>
+<a:minorFont>
+<a:latin typeface="Calibri"/>
+<a:ea typeface=""/>
+<a:cs typeface=""/>
+<a:font script="Jpan" typeface="ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯"/>
+<a:font script="Hang" typeface="ë§‘ì€ ê³ ë”•"/>
+<a:font script="Hans" typeface="å®‹ä½“"/>
+<a:font script="Hant" typeface="æ–°ç´°æ˜Žé«”"/>
+<a:font script="Arab" typeface="Arial"/>
+<a:font script="Hebr" typeface="Arial"/>
+<a:font script="Thai" typeface="Tahoma"/>
+<a:font script="Ethi" typeface="Nyala"/>
+<a:font script="Beng" typeface="Vrinda"/>
+<a:font script="Gujr" typeface="Shruti"/>
+<a:font script="Khmr" typeface="DaunPenh"/>
+<a:font script="Knda" typeface="Tunga"/>
+<a:font script="Guru" typeface="Raavi"/>
+<a:font script="Cans" typeface="Euphemia"/>
+<a:font script="Cher" typeface="Plantagenet Cherokee"/>
+<a:font script="Yiii" typeface="Microsoft Yi Baiti"/>
+<a:font script="Tibt" typeface="Microsoft Himalaya"/>
+<a:font script="Thaa" typeface="MV Boli"/>
+<a:font script="Deva" typeface="Mangal"/>
+<a:font script="Telu" typeface="Gautami"/>
+<a:font script="Taml" typeface="Latha"/>
+<a:font script="Syrc" typeface="Estrangelo Edessa"/>
+<a:font script="Orya" typeface="Kalinga"/>
+<a:font script="Mlym" typeface="Kartika"/>
+<a:font script="Laoo" typeface="DokChampa"/>
+<a:font script="Sinh" typeface="Iskoola Pota"/>
+<a:font script="Mong" typeface="Mongolian Baiti"/>
+<a:font script="Viet" typeface="Arial"/>
+<a:font script="Uigh" typeface="Microsoft Uighur"/>
+<a:font script="Geor" typeface="Sylfaen"/>
+</a:minorFont>
+</a:fontScheme>
+<a:fmtScheme name="Office">
+<a:fillStyleLst>
+<a:solidFill>
+<a:schemeClr val="phClr"/>
+</a:solidFill>
+<a:gradFill rotWithShape="1">
+<a:gsLst>
+<a:gs pos="0">
+<a:schemeClr val="phClr">
+<a:tint val="50000"/>
+<a:satMod val="300000"/>
+</a:schemeClr>
+</a:gs>
+<a:gs pos="35000">
+<a:schemeClr val="phClr">
+<a:tint val="37000"/>
+<a:satMod val="300000"/>
+</a:schemeClr>
+</a:gs>
+<a:gs pos="100000">
+<a:schemeClr val="phClr">
+<a:tint val="15000"/>
+<a:satMod val="350000"/>
+</a:schemeClr>
+</a:gs>
+</a:gsLst>
+<a:lin ang="16200000" scaled="1"/>
+</a:gradFill>
+<a:gradFill rotWithShape="1">
+<a:gsLst>
+<a:gs pos="0">
+<a:schemeClr val="phClr">
+<a:shade val="51000"/>
+<a:satMod val="130000"/>
+</a:schemeClr>
+</a:gs>
+<a:gs pos="80000">
+<a:schemeClr val="phClr">
+<a:shade val="93000"/>
+<a:satMod val="130000"/>
+</a:schemeClr>
+</a:gs>
+<a:gs pos="100000">
+<a:schemeClr val="phClr">
+<a:shade val="94000"/>
+<a:satMod val="135000"/>
+</a:schemeClr>
+</a:gs>
+</a:gsLst>
+<a:lin ang="16200000" scaled="0"/>
+</a:gradFill>
+</a:fillStyleLst>
+<a:lnStyleLst>
+<a:ln w="9525" cap="flat" cmpd="sng" algn="ctr">
+<a:solidFill>
+<a:schemeClr val="phClr">
+<a:shade val="95000"/>
+<a:satMod val="105000"/>
+</a:schemeClr>
+</a:solidFill>
+<a:prstDash val="solid"/>
+</a:ln>
+<a:ln w="25400" cap="flat" cmpd="sng" algn="ctr">
+<a:solidFill>
+<a:schemeClr val="phClr"/>
+</a:solidFill>
+<a:prstDash val="solid"/>
+</a:ln>
+<a:ln w="38100" cap="flat" cmpd="sng" algn="ctr">
+<a:solidFill>
+<a:schemeClr val="phClr"/>
+</a:solidFill>
+<a:prstDash val="solid"/>
+</a:ln>
+</a:lnStyleLst>
+<a:effectStyleLst>
+<a:effectStyle>
+<a:effectLst>
+<a:outerShdw blurRad="40000" dist="20000" dir="5400000" rotWithShape="0">
+<a:srgbClr val="000000">
+<a:alpha val="38000"/>
+</a:srgbClr>
+</a:outerShdw>
+</a:effectLst>
+</a:effectStyle>
+<a:effectStyle>
+<a:effectLst>
+<a:outerShdw blurRad="40000" dist="23000" dir="5400000" rotWithShape="0">
+<a:srgbClr val="000000">
+<a:alpha val="35000"/>
+</a:srgbClr>
+</a:outerShdw>
+</a:effectLst>
+</a:effectStyle>
+<a:effectStyle>
+<a:effectLst>
+<a:outerShdw blurRad="40000" dist="23000" dir="5400000" rotWithShape="0">
+<a:srgbClr val="000000">
+<a:alpha val="35000"/>
+</a:srgbClr>
+</a:outerShdw>
+</a:effectLst>
+<a:scene3d>
+<a:camera prst="orthographicFront">
+<a:rot lat="0" lon="0" rev="0"/>
+</a:camera>
+<a:lightRig rig="threePt" dir="t">
+<a:rot lat="0" lon="0" rev="1200000"/>
+</a:lightRig>
+</a:scene3d>
+<a:sp3d>
+<a:bevelT w="63500" h="25400"/>
+</a:sp3d>
+</a:effectStyle>
+</a:effectStyleLst>
+<a:bgFillStyleLst>
+<a:solidFill>
+<a:schemeClr val="phClr"/>
+</a:solidFill>
+<a:gradFill rotWithShape="1">
+<a:gsLst>
+<a:gs pos="0">
+<a:schemeClr val="phClr">
+<a:tint val="40000"/>
+<a:satMod val="350000"/>
+</a:schemeClr>
+</a:gs>
+<a:gs pos="40000">
+<a:schemeClr val="phClr">
+<a:tint val="45000"/>
+<a:shade val="99000"/>
+<a:satMod val="350000"/>
+</a:schemeClr>
+</a:gs>
+<a:gs pos="100000">
+<a:schemeClr val="phClr">
+<a:shade val="20000"/>
+<a:satMod val="255000"/>
+</a:schemeClr>
+</a:gs>
+</a:gsLst>
+<a:path path="circle">
+<a:fillToRect l="50000" t="-80000" r="50000" b="180000"/>
+</a:path>
+</a:gradFill>
+<a:gradFill rotWithShape="1">
+<a:gsLst>
+<a:gs pos="0">
+<a:schemeClr val="phClr">
+<a:tint val="80000"/>
+<a:satMod val="300000"/>
+</a:schemeClr>
+</a:gs>
+<a:gs pos="100000">
+<a:schemeClr val="phClr">
+<a:shade val="30000"/>
+<a:satMod val="200000"/>
+</a:schemeClr>
+</a:gs>
+</a:gsLst>
+<a:path path="circle">
+<a:fillToRect l="50000" t="50000" r="50000" b="50000"/>
+</a:path>
+</a:gradFill>
+</a:bgFillStyleLst>
+</a:fmtScheme>
+</a:themeElements>
+<a:objectDefaults/>
+<a:extraClrSchemeLst/>
+</a:theme>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" uniqueCount="2">
+<si>
+<t>aaaaa</t>
+</si>
+<si>
+<t>bbbbb</t>
+</si>
+</sst>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xml:space="preserve" xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+<numFmts count="0"/>
+<fonts count="1">
+<font>
+<b val="0"/>
+<i val="0"/>
+<strike val="0"/>
+<u val="none"/>
+<sz val="11"/>
+<color rgb="FF000000"/>
+<name val="Calibri"/>
+</font>
+</fonts>
+<fills count="2">
+<fill>
+<patternFill patternType="none"/>
+</fill>
+<fill>
+<patternFill patternType="gray125">
+<fgColor rgb="FFFFFFFF"/>
+<bgColor rgb="FF000000"/>
+</patternFill>
+</fill>
+</fills>
+<borders count="1">
+<border/>
+</borders>
+<cellStyleXfs count="1">
+<xf numFmtId="0" fontId="0" fillId="0" borderId="0"/>
+</cellStyleXfs>
+<cellXfs count="2">
+<xf xfId="0" fontId="0" numFmtId="0" fillId="0" borderId="0" applyFont="0" applyNumberFormat="0" applyFill="0" applyBorder="0" applyAlignment="0">
+<alignment horizontal="general" vertical="bottom" textRotation="0" wrapText="false" shrinkToFit="false"/>
+</xf>
+<xf xfId="0" fontId="0" numFmtId="0" fillId="0" borderId="0" applyFont="0" applyNumberFormat="0" applyFill="0" applyBorder="0" applyAlignment="1">
+<alignment horizontal="general" vertical="center" textRotation="0" wrapText="false" shrinkToFit="false"/>
+</xf>
+</cellXfs>
+<cellStyles count="1">
+<cellStyle name="Normal" xfId="0" builtinId="0"/>
+</cellStyles>
+<dxfs count="0"/>
+<tableStyles defaultTableStyle="TableStyleMedium9" defaultPivotStyle="PivotTableStyle1"/>
+</styleSheet>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xml:space="preserve" xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+<fileVersion appName="xl" lastEdited="4" lowestEdited="4" rupBuild="4505"/>
+<workbookPr codeName="ThisWorkbook"/>
+<bookViews>
+<workbookView activeTab="0" autoFilterDateGrouping="1" firstSheet="0" minimized="0" showHorizontalScroll="1" showSheetTabs="1" showVerticalScroll="1" tabRatio="600" visibility="visible"/>
+</bookViews>
+<sheets>
+<sheet name="Sheet1" sheetId="1" r:id="rId4"/>
+<sheet name="Sheet2" sheetId="2" r:id="rId5"/>
+<sheet name="Sheet3" sheetId="3" r:id="rId6"/>
+</sheets>
+<definedNames/>
+<calcPr calcId="999999" calcMode="auto" calcCompleted="0" fullCalcOnLoad="1"/>
+</workbook>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xml:space="preserve" xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+<sheetPr>
+<outlinePr summaryBelow="1" summaryRight="1"/>
+</sheetPr>
+<dimension ref="A1:M18"/>
+<sheetViews>
+<sheetView tabSelected="1" workbookViewId="0" showGridLines="true" showRowColHeaders="1">
+<selection activeCell="I2" sqref="I2"/>
+</sheetView>
+</sheetViews>
+<sheetFormatPr defaultRowHeight="14.4" outlineLevelRow="0" outlineLevelCol="0"/>
+<cols>
+<col min="10" max="10" width="9.10" hidden="true" style="0"/>
+<col min="11" max="11" width="9.10" hidden="true" style="0"/>
+<col min="12" max="12" width="9.10" hidden="true" style="0"/>
+<col min="13" max="13" width="9.10" hidden="true" style="0"/>
+</cols>
+<sheetData>
+<row r="1" spans="1:13">
+<c r="A1" s="1" t="s">
+<v>0</v>
+</c>
+<c r="B1" s="1" t="s">
+<v>0</v>
+</c>
+<c r="C1" s="1" t="s">
+<v>0</v>
+</c>
+<c r="D1" s="1" t="s">
+<v>0</v>
+</c>
+<c r="E1" s="1" t="s">
+<v>0</v>
+</c>
+<c r="F1" s="1" t="s">
+<v>0</v>
+</c>
+<c r="G1" s="1" t="s">
+<v>0</v>
+</c>
+<c r="H1" s="1" t="s">
+<v>0</v>
+</c>
+<c r="I1" s="1" t="s">
+<v>0</v>
+</c>
+</row>
+<row r="2" spans="1:13">
+<c r="A2" s="1" t="s">
+<v>1</v>
+</c>
+<c r="B2" s="1" t="s">
+<v>1</v>
+</c>
+<c r="C2" s="1" t="s">
+<v>1</v>
+</c>
+<c r="D2" s="1" t="s">
+<v>1</v>
+</c>
+<c r="E2" s="1" t="s">
+<v>1</v>
+</c>
+<c r="F2" s="1" t="s">
+<v>1</v>
+</c>
+<c r="G2" s="1" t="s">
+<v>1</v>
+</c>
+<c r="H2" s="1" t="s">
+<v>1</v>
+</c>
+<c r="I2" s="1" t="s">
+<v>1</v>
+</c>
+</row>
+<row r="6" spans="1:13" hidden="true"/>
+<row r="7" spans="1:13" hidden="true"/>
+<row r="8" spans="1:13" hidden="true"/>
+<row r="9" spans="1:13" hidden="true"/>
+<row r="10" spans="1:13" hidden="true"/>
+<row r="11" spans="1:13" hidden="true"/>
+<row r="12" spans="1:13" hidden="true"/>
+<row r="13" spans="1:13" hidden="true"/>
+<row r="14" spans="1:13" hidden="true"/>
+<row r="15" spans="1:13" hidden="true"/>
+<row r="16" spans="1:13" hidden="true"/>
+<row r="17" spans="1:13" hidden="true"/>
+<row r="18" spans="1:13" hidden="true"/>
+</sheetData>
+<sheetProtection sheet="false" objects="false" scenarios="false" formatCells="false" formatColumns="false" formatRows="false" insertColumns="false" insertRows="false" insertHyperlinks="false" deleteColumns="false" deleteRows="false" selectLockedCells="false" sort="false" autoFilter="false" pivotTables="false" selectUnlockedCells="false"/>
+<printOptions gridLines="false" gridLinesSet="true"/>
+<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+<pageSetup paperSize="1" orientation="default" scale="100" fitToHeight="1" fitToWidth="1"/>
+<headerFooter differentOddEven="false" differentFirst="false" scaleWithDoc="true" alignWithMargins="true">
+<oddHeader></oddHeader>
+<oddFooter></oddFooter>
+<evenHeader></evenHeader>
+<evenFooter></evenFooter>
+<firstHeader></firstHeader>
+<firstFooter></firstFooter>
+</headerFooter>
+<drawing r:id="rId1"/>
+</worksheet>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xml:space="preserve" xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+<sheetPr>
+<outlinePr summaryBelow="1" summaryRight="1"/>
+</sheetPr>
+<dimension ref="A1:A1"/>
+<sheetViews>
+<sheetView tabSelected="0" workbookViewId="0" showGridLines="true" showRowColHeaders="1">
+<selection activeCell="A1" sqref="A1"/>
+</sheetView>
+</sheetViews>
+<sheetFormatPr defaultRowHeight="14.4" outlineLevelRow="0" outlineLevelCol="0"/>
+<sheetData/>
+<sheetProtection sheet="false" objects="false" scenarios="false" formatCells="false" formatColumns="false" formatRows="false" insertColumns="false" insertRows="false" insertHyperlinks="false" deleteColumns="false" deleteRows="false" selectLockedCells="false" sort="false" autoFilter="false" pivotTables="false" selectUnlockedCells="false"/>
+<printOptions gridLines="false" gridLinesSet="true"/><pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+<pageSetup paperSize="1" orientation="default" scale="100" fitToHeight="1" fitToWidth="1"/>
+<headerFooter differentOddEven="false" differentFirst="false" scaleWithDoc="true" alignWithMargins="true">
+<oddHeader></oddHeader>
+<oddFooter></oddFooter>
+<evenHeader></evenHeader>
+<evenFooter></evenFooter>
+<firstHeader></firstHeader>
+<firstFooter></firstFooter>
+</headerFooter>
+</worksheet>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xml:space="preserve" xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+<sheetPr>
+<outlinePr summaryBelow="1" summaryRight="1"/></sheetPr><dimension ref="A1:A1"/>
+<sheetViews>
+<sheetView tabSelected="0" workbookViewId="0" showGridLines="true" showRowColHeaders="1">
+<selection activeCell="A1" sqref="A1"/>
+</sheetView>
+</sheetViews>
+<sheetFormatPr defaultRowHeight="14.4" outlineLevelRow="0" outlineLevelCol="0"/><sheetData/><sheetProtection sheet="false" objects="false" scenarios="false" formatCells="false" formatColumns="false" formatRows="false" insertColumns="false" insertRows="false" insertHyperlinks="false" deleteColumns="false" deleteRows="false" selectLockedCells="false" sort="false" autoFilter="false" pivotTables="false" selectUnlockedCells="false"/>
+<printOptions gridLines="false" gridLinesSet="true"/><pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+<pageSetup paperSize="1" orientation="default" scale="100" fitToHeight="1" fitToWidth="1"/>
+<headerFooter differentOddEven="false" differentFirst="false" scaleWithDoc="true" alignWithMargins="true">
+<oddHeader></oddHeader>
+<oddFooter></oddFooter>
+<evenHeader></evenHeader>
+<evenFooter></evenFooter>
+<firstHeader></firstHeader>
+<firstFooter></firstFooter>
+</headerFooter>
+</worksheet>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/drawing" Target="../drawings/drawing1.xml"/>
+</Relationships>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="../media/53DCD01620093525202207131233041.jpeg"/>
+</Relationships>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xdr:wsDr xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+<xdr:oneCellAnchor>
+<xdr:from>
+<xdr:col>0</xdr:col>
+<xdr:colOff>95250</xdr:colOff>
+<xdr:row>0</xdr:row>
+<xdr:rowOff>1219200</xdr:rowOff>
+</xdr:from>
+<xdr:ext cx="3810000" cy="2847975"/>
+<xdr:pic>
+<xdr:nvPicPr>
+<xdr:cNvPr id="1" name="Picture" descr="Picture"/>
+<xdr:cNvPicPr>
+<a:picLocks noChangeAspect="1"/>
+</xdr:cNvPicPr>
+</xdr:nvPicPr>
+<xdr:blipFill>
+<a:blip xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" r:embed="rId1"/>
+<a:stretch>
+<a:fillRect/>
+</a:stretch>
+</xdr:blipFill>
+<xdr:spPr>
+<a:xfrm rot="0"/>
+<a:prstGeom prst="rect">
+<a:avLst/>
+</a:prstGeom>
+</xdr:spPr>
+</xdr:pic>
+<xdr:clientData/>
+</xdr:oneCellAnchor>
+</xdr:wsDr>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"/>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"/>
+ÿØÿà JFIF      ÿÛ „ 	( %!1"%)+...383-7(-.+
+
+
+-& &/-//-------/--------------------------------------ÿÀ  Â" ÿÄ              ÿÄ @     !1A"Qaq2‘¡±BRÁÑðá#br‚ñ3C’Â$¢²ÒâÿÄ            ÿÄ 2       !1AQaqð"2‘¡±ÁÑáBñ#3bRÿÚ   ? :Í/°žæj}IŒÍ
+˜¬Dìœ€ÍOì#B»bHÁ0«³Ä­N¼#ñì%¡ÎËè´å­sŠic‘€å¿wç9)*u?\¡EílîÀ;Öyf}½`‰3à.pÛå-Ìs…Ê‹}Ú+–’|X@¼µŽ%*\´bYóÌÃ>õÄg{Ec*N î4ÐŽ[áí"¬a2‘$ZRËÊöTÕ…d„—Jye.ùxÖ!^ƒî#+i@FÚâK wûe®Ö±¢6'T†³Â‹´"…'HÆ^®GHÝÛáÆ‘Š¿¥í5Ô@öwAÙŒ…ÍÏjgþÓ]öŠŒ…²£MežS„*…o¡ãÂÚiîL =©íôwŒfšô×Ñü 4ÏÆ€Ù‚èkèþpRT†9Æ)¹ìx%€ª«3ö‰E²u	†¶Â‹	d×XñX'púCÓ2¡Eó,”c)Ï‘§¡oXÊfã©j	H'H\Ù˜œÎƒG'vQ¤¹î$K%j³ŸO”zÀwbJJ¨·ŸÚ4¡xP5-žó¯]ÀZÝv‡D*ÖB@Jw×ó|`/»,Á>r‚NñEô©z>yÆÜ/k—áŒ•ë4›BÃ–z
+Òƒ!ØÉ¬§NN««ªÛiNe‘ò¯hÿ N£Ìo2zT$ ç"ÄÀ²%¶tûçX©s±(‘vüüÎ÷ÜtNkæÛa c’²à> þ°%‚é™<¨ñˆðsŠ
+T»Gw-XJÕ…ôÎ¯¿Xú	—,!"‰åQæRjVƒUƒ³]ö”­H“ˆáÍÎÍrÎ[-Uû©²‰V ¿AöÅh
+ï]Ÿ¦äá|Þö“8Ð¬*µ"¨/È¿O”aÄ¼´uèØn‹d H•0¤Õš¿íÎvrnÌÀ BñmƒBØC7gë
+ë;@!-LL+ÌÇ«¿Ö±V,39·ŸÒ½'Ôíè‚E„ˆ3?9S²’e‘‰eu¡Þ”0¾e’d¤§ 1àæääyFfíÝå“ëçÿ ÅJÎ¢FC3V›ûÂá§ÚqcI1ûvó”D»¹ M˜¼stHð‚yæxÀj—6Ò¬a»¨”7ÏÒ™b´*³%LÂH<È‚­ÚR€’çø~Q¶¼A#¿w²––˜0'3©ëÜò×Å^…ó	Ñ›&¤HLló×·Ý/j¾¬HowH`‘îÿ –v0û»¼%žéDP€H÷#‘Î¸m!RK“ÌþË´¦lµ¤á0—³—z§=Y#3¯!sÔÈv ¢xˆ7ìM/w’Æ®Iôohòí´:F`ŠÍÆþ0àÜá‚Jˆ›/WB5;J#ÄwÌkÂ86æZ²›Úñ©Nµ<å½QT¹„ O…NÆ•oï,9ó„5¥¦µ°VzÝe([¥%i¡Ë5å$ðö?¤Z@xz°šQè~ð÷Vï i¨‰¸BhmÈM¦~é”g;G*I.’|ëœ{l4åÊÃ5%
+Ö:áËL0ÈY»$¥‡ÈTòy°ëL´×ë÷fY˜“˜§ç0}ÕsM›PÉIÕO— 3‹^F¤èš-`.(Ë®Ýˆ„ïßÖO½-…T£ ËÎ M×û2‰*
+Ä6K7:oÊÛ¼C„Kcìh‚ÖÔÎÄñ6ÐºdwÜ7Åêe89jÂ¼ˆ¡ÁûÃKìAø{Â‹,ÈBæ@Â®êSÌ ü/N0æjý!Ð°&ÍþcïXg6f~ßœ k—¯
+Ù%ó?ŸxÌ¬ƒ=düÍåO¤6¼-¡Ü2öóû9w•ñAÉÉýùÃéÃ\Qh$«…ß2k×9Ÿ06«C+%Àœ;JSAþÐöË$'1Ûgi§å"gv‡hÕ!íqµ¸XŽÔ\á+’d%ŠÉIªŽÓ‚šê|£‰÷½¦QÀ£ŒhH ·1õ<à…Gá%¹Ïäð–óZLÔ¡ƒ¨Æ¹rËÖ/cïkC„¦Ò`’‘Ë\É«ýÚUL9ùŒ¡ü»¾Ú¤~ñ(ê¦Wþ.2±Þò¤ÊHP8€b”¤¹mÇ*çœg¯Ž×ZâXL¤èÃº•QúACªa G5_X£jð¸§Uåÿ äŸ¼NÊJD¹‹DÌ'l ‚¯ÂìÊ­kY5.In i®Qòh ´¹†™w·ú±Í¸Š®n<¸-½ÍrK"t£´‚¼I|Ò• ÁópB«Ê3¶ë•vâ	\·©>4ð-B8ˆÑvÙ‰3q¨º@|Ùž°uÿ o’R	ÔgŸ—¼¨Ç–œïâ”Ö‡T8ÐîëOÂ
+ïíµ¦“ê ¼!·Ù¹¸å¨sÕÎøÏZå¤ÍQJ@,–µ¢©9C™ØÅ3sNÄÆÖC›¡ÔpÛÑZÙW|Ö¼O—ë&ÿ ´6b$+øõÿ òß·yöý&÷¤$­z1]Ágî$$´ªžºtÊövÎ„K
+!Ô­~‚µ^Ú’þ=76èš©¹Ä7¨k4ÔðôaÚiEj³j8}3Wt ¼*
+ja#ðÞ4h³µ7†4KB*T§a8‘åî¿º@ÆØ³lØñƒ`²•Ûz)žé¤mVÞÓ,K	JXSˆãÂ<6PJ‹po¿¬>Ü”ÂM·âŽJPHõ'ÛÖ ÂÚaäF0ÂËÎuqê ©óa=¶h)#(Úñ¨hVZç†æ:@Ö[S(@ö|KÂRK¾ø’™sJð„ƒ\Õ„xg¶˜W„E¬ÌO¿}šxJ[€ŒD²”²”£‹@ù—ÑaŸ="zÔÉ ˆjS¾qÌØ?)¿¿¤eW1+.•m|ªüˆ,üÚÛ'‚†ÍÄcñ1ƒì­PÓð6Š´itÚY%ò>ºÓ/DÁ»hrÖ+—=ÀHÏA¼óßsÛ„âFÔÛüYÜK”EÊ–TI~ †òå^“T§£Ð¥JrÞpjIæÈBÖ·b+¸ïURhj(Çìccv % Fzë³kÒEá‡d–j~sÎ"¬Kð6$Öix€´³mö…7¡†œW.ÞÜyÂëE°UdÐWóœ"#vR©P´åul¼ð a!Åfû¿7ÆbÖ¹…Xð­Áwc˜×("Â¹ÓV{¼NI&¤ ðúUÉh#üÖW#ï¶‰Î½pLu¶À O\6;öLÀÓFëM’w‚<;Øï…WÐ–ª!hSî Ã[ÊTÀD»C|$i©IÍ'ÊÈ°KX™->,%’±´•¦®’3M†R››—ØAZ«ŽÆ‰‰—4¶œ$6J> Ž±Êîij˜©k8\’•Ë<'–c™Ýv@+¸T²v’½—ÞÀ" ‹ü‚€ÔQÚPs5I€V±Ï.´œõéÁ!¾;*R—BÂÏË„‚Ü*\Â –1'dšˆÑIí(l3Aqñ àý +Ó¹šå(;ÔTêÇ:Ãé>¯’¨õB.|^‹Ya¹äÍBT•‘hÙÙ©l¬!Ž™ýt€.%N­š¤æƒ‘û1«›xË —bÎAÌ™VáÇ(š\ È]PÖ¦éÔuªùºÍ$¥Iš	°à±jÄ‰j›-kRß5‘ß.·š?ÂßdÚá›¡4zA¬`™[Üý=©ìò„‰¥Ëü¼¸ñíÓÕjš”ƒ²(>¦%š·5N|ÈpV\Šy˜µÜù‘ÇŒ2¶^‰–áÝ_^1/+©2,ÅH*ÇAˆž5`(Ñ–ÖjØÇðÔùfaªnœ ïG4öLã8ºÍŸš}ã«ÞZÈA”'"H “»S–œa%’ÒJ’µt,õã^‹*QbéH n¨¯¬owkÂ`pp–èŽDÂ¤øƒÂÛ^ H1Ä©¥9‘ÒíƒÆ°´ãDÄOg[¾þ’ÝX{Þ3±N˜£óJ}"»îîrNŠ¤Qi?¼XÎ§Þ7þRxªžëLžJ-qužaðïÓ<â«D’ØZîwqåšq@pHV„PŽPÈah¨ë²š¯¼––ZHÝ×'ó,rPJ—0œ ä3QÍ†íäÀR¦!ÍsãÎ.µÍ’œ’<ÉÌþn#jÂðæÉWN¶vR>¤Ô˜E’bIB”j@$yïŽ$bù–Å¨•#$ü#ÈAÄh°Ë€\LVÓï¯XºÊ­¨cPÅ€aSzÀ‘!4tlZûÆûÂÚaïO!Ýö¦A&Ÿ þÐS¦Ó5Â%¡L‡’»Êå§¸ìfb	„ïQÐrÂ+ÊÊ³8ÉK¹äkåû$„É’™iÐyO™ŒÝø •ŒßF'ßÞ484ãU=*†£ˆØšÜVDK@J3¿Œ9a”%º&Ò%ÿ z÷rÈIÚ4ÜëÈGŸkª="¥7:¤¶b&Ú_4KRÙñ:LYh2e‘0„¤FëŸ7…W`JSˆ¨ð¢Uì&ÚqÌ8e»L!ðƒÅóþcS¦K‰4'ºÆ°õþ•©»­!
+²ÁP€’Ì8!%¸ÂNÒZ•…ˆ—NœØëvš÷R€”)‘>âJÅ0ËŠ†±C)LTrñqh×sß¼+æÈ'hëî[«,³AÖr§KØ®Að<‹<	6ëRIÂHå ú„øN-°å«F™òÓ›Ðfh!-ï|¦î¥1Cí@¦ÐorðJñ¥(Ž$Ÿx¢JŠH#1K²âœ©æ‘0ÿ *$w/´« <°bFÅdÞðnÊÞÐY©òå'T9Ü+WáOX²Óh•g)BRDç‰ï;èºŠV£LLp 4ª3„²ÝjušœàYH¹¢ï(ù;ÿ Ô->8Ôü¤½o6H)€àsæ €í7b¤%'ÄY›*<=ìõ‰'¨94@?
+FMÄæü`ŽØL–«>Qn
+¤‚Ä¶æÅX]7†¸SO^Ë[^Ð•Ê‰é€Å¢’YC©Ï‘‰&êRQ2Z€RUñCèAÈœà×9AI;‰P'Ú§ „ÍB’9SýÂž±¶¼á„ò9&˜˜áÖy®’AÌ="ë(AÚ˜í K9=rDý¢jÏ"Û ´ÝJL‘6b„°|)ÍG¦C~qc¢2RËüQ¨VÛmÒVS$%²PV×µz¼inð(ã·úG’V”Ì$W`³ï:ÀFlkYœu)o¨3¿è®šO‰ŽíO8²Ñ!I)
+ YZ—•°‘ƒ@’Àe]Â8IR”²S‰ˆ+zºg&%-Ä^[2qÊwzè¬@ …Õ7*<³5‡|Ë®øårRRVè.§ËOÖ´,ÂÔxà'jT°K€³‰ŒòMjJÁ	Nâ€ÌxïšYPpÜœ9åX%¤#½˜¬!NT®[ yk	š–Èa¡Ý¸ô€ d5òçu:/f® E³µÈ&+À1EÀTŠÕ2§œlJÒò$øô”ÚË,-+T“ê!§d¬ûÕg’yj~žp’È¶ˆn™˜m"ñÂ‰ÐiUºj¥Í¿+Ej·¸d¹?Ÿ¬nÅM#ð¤`OÖƒÖ(²Z`3Î‚¿aÖŸxæk ëàqªKpÔxJ%¥“MÎjc9Ú9ÉÂ“¹YóöDÛb–kAí–5ZH,”—%ž»‡¬ÃÃœtYkš	)-ªñRÓ€Q>ÿ §(dŽÈ£U¬òaî'³Ã0'‰'èÂ,þ]ˆiRX\é¨VJM‘KgÐ0ûEö¡û;§ýU†oÉþ"(Ú<k—eDš… wîãÂ0·Æ>aFAi~;)xÚ{ãÔ!–í÷ãð¥‚Ô¹JAb=F ð­Š÷“4‹
+š© çíùrr‹ìvSºÇVk_Í5”‹SnÓYF$(5AóXM.ÌM"Á“L›r§ÚßX!<@1û9Ý6_áãtHßäðYs7%÷"å†JƒPtW-Än†Ö™m¶!²X
+.	»-!3äMBÍPAPù78áL÷iŠ8EwQ§ÓñŸ¯/Â]í¨uDªúD”•+Âš$«hë™—„éåST¤ h0•)†ƒ@im—.À…²ž§í™È(88Å4Æ«œ%×‡b6oç¯´+Ñ{OOúó?Ù,Æ‘Ú›@RARTçâHÿ ‹B•Ù‹¢AÔ|]~^±LË()^ŸüÅ”ÎÁì¦uúÆ9çî¬´Í%Gy>ðuûnRÕZ†ß©€Q)KRJ6–áÀù¾‰0Eëe)QJˆÄ3¬w>±ÐÛÛ:åi$µñ®#—^ÈK*ÁSøC³³õ$…ã|ªøUù”{"P–¦ÛÞùWv±\é !3¯ÞGÂÛß„3Ÿe<¹­kˆñ|ýx}×+ÄIX «H&T•Z1L3XKs¥K<Ïœj¶M—cT‚„Ì–£±1°©EÈmÄ¸Šä]æ
+BE	X µ89èLlˆŸ‘ûXÚN¸´ð$@$ÌAÂy¥¶I²ˆWxNÏ‡_Ò:•dJ¤­d¨)® ”ûEß²I–‰
+Ú+TÅUðËBÚ£LŸŒ_&@TÙ“ÒMYñ§‡N0N0q(hÓ% T'C®ÜÉ;Äc†9dœ•/mX@M(í‡ñâÉÒB‚Tÿ 4kÂGxÚ¾ílé‰¼*ƒoKAÀU¶.ãåbBÆÝc ‘g9á¾šªäˆÁ ¥Îx¿¼:Z6pý=".{ÐxS Dè©kÃ%®ƒó$þ’ç• Ð
+å©Gáí^TÒ‘eQÙhõ‡&beÙÔ	ªƒ6®="z„z½¥ÖËVY“T0¦ƒ‰/6¹ºIþaõh
+Ä’T]lZØÙˆæÈÆ“*Îî` )&¾½r‡÷rL‚@„w{¨øˆåÞÅ €àŽUéªÒó`Õk8ZshBFÒ‡,Ì+·vxÌÌµU*U°i_hÊ}ˆO‹)”Ùæ=rLm6ÕV²ài¼î0ŠP*ÄNeX5EÓfgÐiØ¥º›æÕûÅíhcJCÏxñ»óÐO;?#x‚ÆÍ»JHXÌzÐ/g¥™k¯LçqÐòÌup³ƒgh©¹©¯©a‚“É)Xq¾»Á0D©`BÛm…Hšµ _Mi¨Öÿ Õ
+J”ƒ,	 ‚F[Å_ÌA
+}îZ±Æ «Y„DžÎ¼ç©DãP}Ô#Øoñô6GgV¤”‡Ù¯.þO«ŠÚ	æÁùt)Þ7ñéÛ¾Î¹2–²pÑƒñúýÄ,°Ïš†Ä29yð¨ÁZâ›SKm›}ýÖÖö¶°$ÆVÕ$.kÕNüÙ¡•¦ÛÞ ‚ÎîÅ¡o}ŠZRÛx„þn0AhÏª645 %¶wuOÒ§ó„:	)RÔï"#™Ìªˆ¸ÊIi--ÛÑW\·–¢±ø†OíST¥Ô²x’L]*Ä‚
+¦¬¥5`€ê${G²¦)'J˜‚‘Œ'>ŠNykçC‹‚–æ»ÄÇ/§=Ö)˜”RKâßÎ—%Jb%€<E$¿
+PsŠm6‚¥R«ðêIøNöüÖ—q®RqLBVp	 „ê@Qs8Î‡rCðÀ€&IŸA<Àç¡™f\µ	sÓ5%
+Ä‚ ¢Ò˜Š˜#thžŒ	‘0BÐvùÜ)'¨s[”$¨'K¤•…P0©Ì³QQ”([‹ú!'gÅ»åÆ±²´Vîü1Ìž¤lÓ‚"KŸ¨pºÊ¥˜m)MÏ–ä«	ïOˆkÃz¿–YWy…ÜKbÃÚA}ÕõãîùøN"ó8ìùv°êÜIÖÂÔŠ<1¦$ï÷³3°lö9„&RBRµxµæU¸§âßf–™l£ŒÏªÑ5aÓ†`¶ òqýà{%œ®pÀŠ®C.pN³×-U•)²ÛCI˜ ÆœˆÆxjRé˜ÃXåXm+Ñ<c»ÊÉ…@¤ì9Ò/° $‡Ù@Ïz¸©£^ñd„Š=Í®C§N¶ŸA(ÛV•a.“­;¿¤0+,CÃ #6Ü"¤[À^'‡(’æ÷ÓAVD· LK¸ˆ½GZà£®;;©Í ûÂëu¯ÉÓ!ÈE“í*HT¡@ì£¿ì »¢í—0§x0i5µÄ»Ë @H˜^™ÃûºËLK<É0$ë*,ëeâQÍ-@GÛm‹›J%$n»Ï8Ç·¼Óz;‰2¹¼åJ›7` 2}ç|b¸³÷ŠlRáÝ¤.µW±°Ò–i´fY3²d‡Bë¹Cê>Ðøä)è’úéî#{!âZe…
+é‘Ôq‰™ÛjhT÷€b{ºXf!µlútÊH·…¿ðú1ãùÌiI Q¯Ô>uÑ«^ '»*ð«dÇ4Ÿ:W^¯çõDøqƒµ{~Ú¤)TÆÅ†æž>](ýãOz¨”¶ÑvRœšd7ñô…fî|ˆ¦ìºîG³†Òd„ÑtØº—,Ç’fPD‚2ªZ;êîZÈÇ1)JrB+Ì“JÂ‰—Œ™@¦[-[’\“¼˜«´Ö4¥XÕ1y©Ïòs©þB,ÉG8êTš.&7D)_UÍòÿ _êºTÕ…½UŸecžÅ@ä°Üˆ.Ÿ¼	w£‚g'ÔîçK=ÐÀÑÆ£†„âYÀj™Ùü¸>ûÒ•ÎIfPŒŽZ µXšµ4"£¡Î÷»
+Ré8“¡á—¡¤+»dÍPR¥¨¢Xñ+á}Á9OËp(k¸‘3¤j½¹¬j92‰`j¢­Ã6ã¤]ÚU%3Õ.XÙI	 W ¸¼p›j¥)+*ÄáQÒ¶§÷…~"?2ðbMKŽ‘ŽjwS-iqÙ3¨T
+¤LR––VÐç]:EÓ…”¶\å–JMBy“òÑø˜î~	Ó%’£ˆ³¨Zòm¹Tõ÷‰iB”I$¢ 4wá ‘:Æëš×²ZÌ‰ðíÉÉ11¤®m¨!
+YT°¬Ù‰ôFÁ"»´€Ç˜”æ[§Èüü/ÙÒ´Ô5RæpL‘„*`,¬j	H¨5?O8h0—äiîÿ ¨Ò&'t'•b8ÊAÉô®ya«+*U¡œ¹ªH¦ËTQ–üüGœq5,%$…Ð^‡ê¥yaÏ?H¶Z^¡Xé\Ÿ¦ø:Ž”žÉÙÅ"C5çÃOOž´ÚV|E”îÄÐó9›i
+ ) á |_ÂÑÔ™©¥*þaNaµŠmV”>!‚ZÇ‡ûÂbL+Pµ’]ï·	ÝÅU2t×bœ*g|8½§›Bd „‰„}—,Ý´)™%S&Bqaú¼{c–~ÿ xÇƒ´ e÷HtA'g¿bèY”R ÊˆÜD6—'¹H˜¯ð'}3ä) Z',¨¯EŸ^1ê
+–]D“ÆùpÎ›UCXmlÎò J‰* Ö¤ó‡2ˆ4x<HL«*Éƒy°?œ`kˆ€\˜–¥PæS#{I#´¯T–AÌ{BK4¢ît‡wÍ°-i–“²—s˜ÄynúÅ¶+ "µ™B[P²˜\Ì6JöïIáP„‘åSgÂuáKXmGF÷‰tá"®tUÛ“…$§0©^t.±ÞeWáù§õyeÎ(¾o€6%m+U|#–óéùv)ÇSZîÎ*§FYãÁZÖ›r¶ö»r0»¤äÒ¼¯$wHRHSŽ'*ðÿ xÈO(”^aïò¾&þo´-´_©Ôç,T€m.Ä?ªSÝNœ\ah±UDïQëúÀ×¤²¶(vø´ÅÅµjÂdÞDbðÆÃÐAÈ¼È Oš‰úCû—°ÈÕo|ÇŒ}Õ©°+CM"GbÒ¿“ÉF$¿‚r¦ó´“
+µQ'ôéa‹å¥ÉŽf%¡ÃD[‰C*7Ý˜¼;é@©±$”«+óPcPñ¦¸åwµâàÐ¿Ÿœ/´ZYU?v\QbV9³‘þ›Šñf-ÄÓÊ½T?v†K‰gÂ¿RzÇ7…ô”á•%±,ÕYá|Ï@§™¶‰RŽÌ¶$ï˜jy‘AÍáTØç¸Nã‰õF9}'á'·¤•Y½_Ò.¼‚*L¹`¶µ(üDýYkWzqÍ<wõ€û‰ž¥§æ‘kLÄìØ‘V™Ä	‘¨èj‰»n”›4ÙêQøu	Ì0ÔÖ¼ K¾HîgL\Æ +
+@©9frˆ™æH)Ixîè°‰Øñ•œj`”²jk‹–L ä€\ã‰Û”­¦ÛšÆ Ô‘¬puFbFD •²™  ‘‘â~ñÅ”€T t ƒâãÌ
+ô…ªž±3»)V1²Üùã-ªî°,ãBvÎAË‚ß8®o¤aiiz¦•f<8lç#D1(ãd”¾f¡ÆÇý±jÁ$ÌHbCêÛŒ_:Ö•J—€:Šp-†`)” š-°hw²ŸÎ0”Ö‰Ôäçñyv€JF-•© Qßº-ná*ÄÄbÐ¿©™ ”Ì@
+þ,^›Må™ó&%A )ª~l ç†¶tÓl¤¶©h$_›mÉÈ ý>Pê˜¥déGËòÁ÷mœ©A;Ï¦°%1
++óÒ	òÐÝ‚¥êK¹¿8FUq:âƒ²R¸Þóž¢8"o‰RÂ%Ë–K“Rrs]÷|´òb‚R<Ï 50‚Ôµâr³Pã•r‰Þ)^"O8›ºu \®ï–€gÑy^Kšªl£AÃGãÈJÍÁ7mŒ,·¤6°X0L)Ôi¼gO8Tc hœº•MÝw+ô-ŠÌR*"ë”ñMã}J’|KÑ#ëº<×Ö0§©UÏ6´ ûInî’–lDÐpÔûFJÕzÚÕ;…?¼[k˜¹Ë+˜]õÐnd¹É¨Pë°S¤Ñ1)¢­ ŸeŸMµcà	ç*×1Y¨¸SÚ5©º…#Þ)™Ùôæƒ„ù§ó”0V¦v :åÒ³vK2_(Ð]öI{éÄ<:r¤+Ô6ãF<Œ"ð’ÛI?íoh
+…îÊ1øVÚ»7f˜$J_Ìœº§ìÐ³³RØ0-µJÑ—%^þßfÔ‘ÔÅK½¬¢ÔNU1}^'ÓîHSÚw{+%ÙKIò1"”Ûr“/«¿XöYÔ¦ec&ÛXì‡W¤]ûKŠ…&Iìó
+ÁäœZêô¶,cjä¹Ã;#”‚\ÐÍ—HíjRƒb$n¤2v6ø&ç»R©ó‘Dƒó3¿G|#fD¦¸`çá-±ÝGÆK1¦÷Š-(cB˜aÕ«ÌŠÂ»]œ³ð€eRçx‘5­¢E8AwJÿ }-STJ¾#½${´vÝ&i%¶G©ÝÞ6B“Q>  é¾tŒo„%®ÂqÏCÃ¤aµ÷S184}ÉôßX6çÀ'¤Íð„–×i©õŠìr ^@R¨	Éÿ ýAÜ µÙ’i9¯f3’sÔþÐ÷¸ì¨£#Z¬¸f…cC²†üðóš=›t,é²ìKï[¥9PÚÃ¦è&–˜;ÐÕ5Eï¨ÙËHÌdO¸8v.±:’ÅÓ‹Ãñ$ùýã«]¼‚	QJ¿ñŠQd'cá‹®Ë¹SX;O <0FÏ3µÚ’×WñÓÒD˜ˆÓã–ÅU²×I,ø~mi”/$KF¼Í?öñ*(•b*XHÂ¦Ë<<b^¶d˜—^t!„†¦·¾cjU>i=>žÖØ
+PJV§ÎJŸ$ «˜o!úÀ÷e—¾ªsƒ•v‰e¦‰ê¹¤ÁÕz4XÐ³’Þ¢²C‡!Íf*Ê%ã<.fÅ-¯œsÏBNÝ9Ð@¸–³ÑK‰„Òê±ÙÀ7­³¥E&¡màeï{áå4µ%KU%½#  N×™„Qaq.vÕÍyq˜Z¹6™l†cfåoÞ‘›\’•¨1¢/»–_eLaµ¢R¦±#lP7sÝåÓÝ›6lF§ ì|¤6
+"‚³ËjµOæÆYpÑ-Wç‚çe6²ÏV+›iHU|ÿ 5ŒÜÉË“3UCî;øŠŽÇö€PT² úè9À÷E§xS÷be4µÙeÍABÒ•%C#Q6¿»8,êQ `±Þ‚r
+á“+Ww+J™Ô¦%æôŽíÄÒT‚¥”3J¨Äá¢ªŸHœáI[²²¦4;¿Kåk”š6ÓE¶uB6õ†7ÝÒdÌ`Bª—«CêÞÍ ¤‘ñG­xsp¼öS,|Ä´Ò]ç0 Û„H_„Ç°›¸+ûÇñ÷_^6dÀ³Ð”‡0¶ð½'d’„ñ	'ÉóòŒí¡3­
+)+Q2MAG&²\©k’½oDR’	ÜŸ©Ò:¶-_³ËHÔb?ÕZô><»¤$PPfu0Á3AGï@N da¦ÆfõCgõùTÝ³Ð²Ê,º8:°ghîò‘@I N^°®qZQ/2s ë$‰¢rq¢JF¯—SW-v›aiÞ´ÖeÊ	Ü=u„·ÝŒ(ÐÎ@WÅAº¾-© ŒËd"f_Å*œÝ:¬l»;“GÃùôŠ•e*0Rm
+I _"”‹Wlš Ô@àÇ«s†Vº›á„ a)¥%-‹h×ç:Ë6Î¬)`d2óÄ´X‰Â@|B¿QÒ<D´ ŒL¢ãÊõƒBrÍã®®,!Æbÿ ²>ÔœR„Â0÷”@Ü™üßZgÙìò±RC©CRtN¼:B^ÐÛLõ†N$2R4H”ô0¥,Éôú%Ž.ÜüO\rŒ³­3Rú€°Ü räDw:ï#dŠœš¾ÑDû+KÅ½I{ŠÅ©+ÀˆæÏ«þaÞÓþ¢n%µ˜ý*¬Tµl¨¤äàÃ›UÒL¥MÄäW7>p®É ¨Ò4v©…B‡ñàj}›¬&«ÍâÔÆ2)Û½fQ.]ÖP ~£q€ìRjùðŠSÊB;MX 4affÙf© ªr†©»€–³ü*>@þy@‹µ#ö…©Y?á‹¯+ÛÁ(2HbH©|ù7^âÐ8J†ÀIlóð—E†óF
+’ãLÏHG"ÁŠ´ÝªIt¯Ö¥:uu@âà"'êµr­	Q&¡ËùÄ·^²d¥Ô N5W–c)dX%‰Âw=w>0X1Ür…ÎÀùy(].l°„ûÝSVVÍ¸f ‹%¨Ì#ÎŽÞB+7r’Y¨íËœ>VÑb¸oõÂP¼JÐÙ®„š¿WÒB; ýâ þ%$S>T‘ÊSQ±Ð.ì×ÿ dƒÚH0á÷û-µÿ |YW)HÇB©ÂüÄ ÛØ˜ÏX,beM<Ï-ÐRPl¹Š`aÂ
+Ëk1Í çy&ŠU‘;%ÕGë~ÈcØUÿ èûª;³Á2º—>vÒ—±–"'‚wž&‘¡±ÙRC"‰¶§sæOGv¦bðËJ°€(¡–Oé¼ˆÚÙlá	@5>§ŒMÚŸíù@\XÑ'(ØÀbrÑŸ¿AK}±#‰Ò1—¬Õ(Â»8.t”ÚW”×±¶ Jæ«M”û«éë_ö|eÆšÇ·=²R$¡"`*	cˆÔú˜ªñ·=%‚¢rhcËÍY)‡_)(·LJÒ1e!AÆ%dõ×v‘§™"YCË	ejeç­ª¦\Óð
+x¨ŒÏÙo)Év.	v#.[¡ï¦^%¿‰E‚èoé;—rbQ¥ ‹UÞ‰hs@=~ðœvŽÐú`k$é³§)EJH*•L( ;—êã€¸Ô}ÁoRŠ‰¤h2ö‹û7`&”Ÿ•üˆûÃ]“(|Æã›C.ÏX{©©YÈÐ¿Õ ŸX
+d¯`1ª²×Ùä³´f-Ö-@kI¶Lóë»u›¾˜5©à—Ï®_ÚF³¦ˆ(Õ/5ž7r–jyòx&Ùv”H$üÉ?O¨ò:$$-(jáQÒR>±çide[ð÷¤qí.½­ÞW:°˜Vw²ÖP¹„Ñçkm	dËFaX‹pz¹òŽn9ÊI!$Ûˆ­÷jƒ“^0ÿ }.)at‰UÝÖÕ øA#?ÍÑuéxÎR[ÂÃê`[¥:sÝ¼j#Ce™ˆb?7sµXë¢Vmñ{¬½‰@¨Qõ9um‚ëaöŒÍáw”(†¦‘uÕ|Ì‘OGÂâtö‚ªÃTK
+Q/h[Ý"¤RÛ,XR¢t¨;¿Hst_Òg€íjƒEšŽO^A8	ümb÷±Ö¹!•œLŸu&jq%‚¿(abmS¤œIŠUP9ÀåHÑXÑE†É%¹}âëÊÈ•' µ?‡ôö<"–VƒiÈN{gò†»í’­+o	Ì›ˆzŽPçs±ÆœŽcqûKk²™S09ËW;Äi®›ÐOI—3üÀ+üIù‡¨ë½žæ[âf‰myòYiòHÎ2á•®i+(" yƒ›54:Ñ•®¦–Ãë¶ZV(yD+T˜ð:H cãXÓLBÔ~È"B„Þs…1?1%î_½;)ÿ füßUCûaÙ‰!í>u;üë:¼úÂÛËÃ$PÏ0UP·W§ÔCKU¦¥"D‡ÕÕiÕeäk‘€SO¬HêÚ £äy‚‡”1ì¯ù§ùWD…Uÿ ¨¦Ôòž¶¢mTš¶¦ò„ö›Bûà1©˜QÎø‘#hìä’ý§Ýlgøº}âîÏä³®,õÎ$HˆùJU_úÏ¢ñ?÷ÒGð}Uv¿ü“üÉ÷‰;ûÓå÷([ç§Ëî²öòÏóF¡!å‡®ÌH‘µµõ?eEmG5žló0býÃiÛŽ1^qäHc|Þ…Õ]¡ñcÞÛtëï$3³ù[ÖõÃÊvrËM£ï+®r•-X”NÎ¤Ÿx‘!ý«Ê:Ü¦§åF£^gÞ;W…\´H‘ç`‰e»EþL³®#_é€¬_çÙù˜‘#Ô£ä©U5§ÕWzš¿æ>ðz<"D€©å	ÍÕS¤7ÇÄŽf©‡g0Š‰$-ÿÙ

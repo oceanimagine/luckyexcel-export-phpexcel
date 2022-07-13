@@ -387,6 +387,18 @@ if(isset($_SERVER)){
         // $newsheet->freezePane('A10');
         // Config
         if(isset($json_all[$i]->config)){
+            if(isset($json_all[$i]->config->colhidden)){
+                $keys_colhidden = array_keys((array) $json_all[$i]->config->colhidden);
+                for($j = 0; $j < sizeof($keys_colhidden); $j++){
+                    $newsheet->getColumnDimension(convert_alphabet($keys_colhidden[$j])[0])->setVisible(false);
+                }
+            }
+            if(isset($json_all[$i]->config->rowhidden)){
+                $keys_rowhidden = array_keys((array) $json_all[$i]->config->rowhidden);
+                for($j = 0; $j < sizeof($keys_rowhidden); $j++){
+                    $newsheet->getRowDimension(($keys_rowhidden[$j] + 1))->setVisible(false);
+                }
+            }
             if(isset($json_all[$i]->config->borderInfo)){
                 for($j = 0; $j < sizeof($json_all[$i]->config->borderInfo); $j++){
                     $borderInfo = $json_all[$i]->config->borderInfo[$j];
@@ -888,11 +900,47 @@ if(isset($_SERVER)){
                 $newsheet->freezePane(convert_alphabet(($frozenInfo->range->column_focus + 1))[0].($frozenInfo->range->row_focus + 2));
             }
         }
-        if(isset($json_all[$i]->showGridLines)){
+        if(isset($json_all[$i]->showGridLines) && !$json_all[$i]->showGridLines){
             if($json_all[$i]->showGridLines == 0){
                 $newsheet->setShowGridlines(false);
             }
         }
+        if(isset($json_all[$i]->images)){
+            $images_keys = array_keys((array) $json_all[$i]->images);
+            for($j = 0; $j < sizeof($images_keys); $j++){
+            $images_info = $json_all[$i]->images->{$images_keys[$j]};
+                $width_crop = $images_info->crop->width;
+                $height_crop = $images_info->crop->height;
+                $pos_x_default = $images_info->default->left;
+                $pos_y_default = $images_info->default->top;
+                $base64_info = $images_info->src;
+                $explode_type_1 = explode("data:image/", $base64_info);
+                $explode_type_2 = explode(";", $explode_type_1[1]);
+                $type_image = $explode_type_2[0];
+                $explode_encode_only = explode(",", $base64_info);
+                $encode_string = $explode_encode_only[1];
+                $picture_decode = base64_decode($encode_string);
+                $name_file = strtoupper(bin2hex(openssl_random_pseudo_bytes(8))) . date("YmdHis") . "." . $type_image;
+                file_put_contents(__DIR__."/images/" . $name_file, $picture_decode);
+                
+                $objDrawing = new PHPExcel_Worksheet_Drawing();
+                $objDrawing->setWorksheet($newsheet);
+                $objDrawing->setName('Picture');
+                $objDrawing->setDescription('Picture');
+                $logo = __DIR__."/images/" . $name_file;
+                $objDrawing->setPath($logo);
+                $objDrawing->setOffsetX($pos_x_default);
+                $objDrawing->setOffsetY($pos_y_default); // this function has no effect 
+                $objDrawing->setHeight($height_crop);
+                $objDrawing->setWidth($width_crop);
+                
+                echo $pos_x_default . "\n";
+                echo $pos_y_default . "\n";
+            }
+        }
+        $excel->addNamedRange(
+            new PHPExcel_NamedRange('PersonFN' . $i, $excel->getActiveSheet($i), 'B1') 
+        );
     }
     $excel->setActiveSheetIndex(0);
     ob_start();

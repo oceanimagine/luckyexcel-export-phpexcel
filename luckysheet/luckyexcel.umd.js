@@ -22858,7 +22858,9 @@ function () {
   LuckyExcel.transformExcelToLucky = function (excelFile, callBack) {
     var handleZip = new HandleZip_1.HandleZip(excelFile);
     handleZip.unzipFile(function (files) {
+        // console.log(files);
       var luckyFile = new LuckyFile_1.LuckyFile(files, excelFile.name);
+      
       var luckysheetfile = luckyFile.Parse();
       var exportJson = JSON.parse(luckysheetfile);
 

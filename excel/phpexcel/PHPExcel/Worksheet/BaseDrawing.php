@@ -129,7 +129,7 @@ class PHPExcel_Worksheet_BaseDrawing implements PHPExcel_IComparable
         $this->worksheet          = null;
         $this->coordinates        = 'A1';
         $this->offsetX            = 0;
-        $this->offsetY            = 0;
+        $this->offsetY            = 1000;
         $this->width              = 0;
         $this->height             = 0;
         $this->resizeProportional = true;
@@ -305,6 +305,7 @@ class PHPExcel_Worksheet_BaseDrawing implements PHPExcel_IComparable
     public function setOffsetY($pValue = 0)
     {
         $this->offsetY = $pValue;
+        echo "Inside Class : " . $this->offsetY . "\n";
         return $this;
     }
 
