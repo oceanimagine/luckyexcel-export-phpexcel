@@ -1,3 +1,3 @@
 # Luckyexcel PHPExcel
 
-This Library are use for export function using Luckyexcel.
+This Library is use for export function using Luckyexcel.
