@@ -282,7 +282,12 @@ if(isset($_SERVER)){
         $newsheet->setTitle($json_all[$i]->name);
         for($j = 0; isset($json_all[$i]->celldata) && $j < sizeof($json_all[$i]->celldata); $j++){
             if(isset($json_all[$i]->celldata[$j]->v->f)){
-                $newsheet->setCellValue(convert_alphabet($json_all[$i]->celldata[$j]->c)[0] . ((int) $json_all[$i]->celldata[$j]->r + 1), str_replace(" ", "+", $json_all[$i]->celldata[$j]->v->f));
+                $newsheet->setCellValue(convert_alphabet($json_all[$i]->celldata[$j]->c)[0] . ((int) $json_all[$i]->celldata[$j]->r + 1), $json_all[$i]->celldata[$j]->v->f);
+                if(isset($json_all[$i]->celldata[$j]->v->ct)){
+                    if(isset($json_all[$i]->celldata[$j]->v->ct->fa)){
+                        $newsheet->getStyle(convert_alphabet($json_all[$i]->celldata[$j]->c)[0] . ((int) $json_all[$i]->celldata[$j]->r + 1))->getNumberFormat()->setFormatCode($json_all[$i]->celldata[$j]->v->ct->fa);
+                    }
+                }
                 $newsheet->getStyle(convert_alphabet($json_all[$i]->celldata[$j]->c)[0] . ((int) $json_all[$i]->celldata[$j]->r + 1))->applyFromArray($style_vertical_middle);
                 if(isset($json_all[$i]->celldata[$j]->v->ht)){
                     if($json_all[$i]->celldata[$j]->v->ht == 0){
@@ -310,6 +315,11 @@ if(isset($_SERVER)){
             } 
             else if(isset($json_all[$i]->celldata[$j]->v->v)){
                 $newsheet->setCellValue(convert_alphabet($json_all[$i]->celldata[$j]->c)[0] . ((int) $json_all[$i]->celldata[$j]->r + 1), $json_all[$i]->celldata[$j]->v->v);
+                if(isset($json_all[$i]->celldata[$j]->v->ct)){
+                    if(isset($json_all[$i]->celldata[$j]->v->ct->fa)){
+                        $newsheet->getStyle(convert_alphabet($json_all[$i]->celldata[$j]->c)[0] . ((int) $json_all[$i]->celldata[$j]->r + 1))->getNumberFormat()->setFormatCode($json_all[$i]->celldata[$j]->v->ct->fa);
+                    }
+                }
                 $newsheet->getStyle(convert_alphabet($json_all[$i]->celldata[$j]->c)[0] . ((int) $json_all[$i]->celldata[$j]->r + 1))->applyFromArray($style_vertical_middle);
                 if(isset($json_all[$i]->celldata[$j]->v->ht)){
                     if($json_all[$i]->celldata[$j]->v->ht == 0){
@@ -876,6 +886,11 @@ if(isset($_SERVER)){
             }
             if($frozenInfo->type == "rangeBoth"){
                 $newsheet->freezePane(convert_alphabet(($frozenInfo->range->column_focus + 1))[0].($frozenInfo->range->row_focus + 2));
+            }
+        }
+        if(isset($json_all[$i]->showGridLines)){
+            if($json_all[$i]->showGridLines == 0){
+                $newsheet->setShowGridlines(false);
             }
         }
     }
