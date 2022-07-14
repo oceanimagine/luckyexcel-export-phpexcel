@@ -223,8 +223,8 @@ if(isset($_SERVER) && isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_MET
     // file_put_contents("JSON_RAW", print_r($json_all, true));
     // file_put_contents("POST_RAW", json_encode($_POST['json_luckyexcel']));
     echo $json_all[0]->name . "\n";
-    echo convert_alphabet((string)$json_all[0]->celldata[0]->c)[0] . "\n";
-    echo $json_all[0]->celldata[0]->r + 1 . "\n";
+    // echo convert_alphabet((string)$json_all[0]->celldata[0]->c)[0] . "\n";
+    // echo $json_all[0]->celldata[0]->r + 1 . "\n";
     // exit();
     require_once __DIR__.'/phpexcel/PHPExcel.php';
     
@@ -908,7 +908,7 @@ if(isset($_SERVER) && isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_MET
         if(isset($json_all[$i]->images)){
             $images_keys = array_keys((array) $json_all[$i]->images);
             for($j = 0; $j < sizeof($images_keys); $j++){
-            $images_info = $json_all[$i]->images->{$images_keys[$j]};
+                $images_info = $json_all[$i]->images->{$images_keys[$j]};
                 $width_crop = $images_info->crop->width;
                 $height_crop = $images_info->crop->height;
                 $pos_x_default = $images_info->default->left;
@@ -923,13 +923,41 @@ if(isset($_SERVER) && isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_MET
                 $name_file = strtoupper(bin2hex(openssl_random_pseudo_bytes(8))) . date("YmdHis") . "." . $type_image;
                 file_put_contents(__DIR__."/images/" . $name_file, $picture_decode);
                 
+                $plus_column_width = 0;
+                $actual_x = 0;
+                $temp_plus = 0;
+                $coordinate_column = "A";
+                for($k = 0; $k < 1000; $k++){
+                    if((is_object($json_all[$i]->config->columnlen) && isset($json_all[$i]->config->columnlen->{$k})) || (is_array($json_all[$i]->config->columnlen) && isset($json_all[$i]->config->columnlen[$k]))){
+                        if(is_array($json_all[$i]->config->columnlen)){
+                            $plus_column_width = $plus_column_width + $json_all[$i]->config->columnlen[$k];
+                            $temp_plus = $json_all[$i]->config->columnlen[$k];
+                        }
+                        if(is_object($json_all[$i]->config->columnlen)){
+                            $plus_column_width = $plus_column_width + $json_all[$i]->config->columnlen->{$k};
+                            $temp_plus = $json_all[$i]->config->columnlen->{$k};
+                        }
+                    } else {
+                        $plus_column_width = $plus_column_width + 75;
+                        $temp_plus = 75;
+                    }
+                    if($pos_x_default < $plus_column_width){
+                        $actual_x = $pos_x_default - ($plus_column_width - $temp_plus);
+                        $coordinate_column = convert_alphabet($k)[0];
+                        break;
+                    }
+                }
+                echo "COLUMNLEN 0 : " . print_r($json_all[$i]->config->columnlen, true) . "\n";
+                echo "PLUS COLUMN WIDTH : ". $plus_column_width . "\n";
+                echo "ACTUAL X : " . $actual_x . "\n";
                 $objDrawing = new PHPExcel_Worksheet_Drawing();
                 $objDrawing->setWorksheet($newsheet);
+                $objDrawing->setCoordinates($coordinate_column . "1");
                 $objDrawing->setName('Picture');
                 $objDrawing->setDescription('Picture');
                 $logo = __DIR__."/images/" . $name_file;
                 $objDrawing->setPath($logo);
-                $objDrawing->setOffsetX($pos_x_default);
+                $objDrawing->setOffsetX($actual_x); // this function has no effect 
                 $objDrawing->setOffsetY($pos_y_default); // this function has no effect 
                 $objDrawing->setHeight($height_crop);
                 $objDrawing->setWidth($width_crop);
