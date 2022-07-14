@@ -928,18 +928,23 @@ if(isset($_SERVER) && isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_MET
                 $temp_plus = 0;
                 $coordinate_column = "A";
                 for($k = 0; $k < 1000; $k++){
-                    if((is_object($json_all[$i]->config->columnlen) && isset($json_all[$i]->config->columnlen->{$k})) || (is_array($json_all[$i]->config->columnlen) && isset($json_all[$i]->config->columnlen[$k]))){
-                        if(is_array($json_all[$i]->config->columnlen)){
-                            $plus_column_width = $plus_column_width + $json_all[$i]->config->columnlen[$k];
-                            $temp_plus = $json_all[$i]->config->columnlen[$k];
-                        }
-                        if(is_object($json_all[$i]->config->columnlen)){
-                            $plus_column_width = $plus_column_width + $json_all[$i]->config->columnlen->{$k};
-                            $temp_plus = $json_all[$i]->config->columnlen->{$k};
-                        }
+                    if(isset($json_all[$i]->config->colhidden) && ((is_object($json_all[$i]->config->colhidden) && isset($json_all[$i]->config->colhidden->{$k})) || (is_array($json_all[$i]->config->colhidden) && isset($json_all[$i]->config->colhidden[$k])))){
+                        $plus_column_width = $plus_column_width + 0;
+                        $temp_plus = 0;
                     } else {
-                        $plus_column_width = $plus_column_width + 75;
-                        $temp_plus = 75;
+                        if((is_object($json_all[$i]->config->columnlen) && isset($json_all[$i]->config->columnlen->{$k})) || (is_array($json_all[$i]->config->columnlen) && isset($json_all[$i]->config->columnlen[$k]))){
+                            if(is_array($json_all[$i]->config->columnlen)){
+                                $plus_column_width = $plus_column_width + $json_all[$i]->config->columnlen[$k];
+                                $temp_plus = $json_all[$i]->config->columnlen[$k];
+                            }
+                            if(is_object($json_all[$i]->config->columnlen)){
+                                $plus_column_width = $plus_column_width + $json_all[$i]->config->columnlen->{$k};
+                                $temp_plus = $json_all[$i]->config->columnlen->{$k};
+                            }
+                        } else {
+                            $plus_column_width = $plus_column_width + 75;
+                            $temp_plus = 75;
+                        }
                     }
                     if($pos_x_default < $plus_column_width){
                         $actual_x = $pos_x_default - ($plus_column_width - $temp_plus);
