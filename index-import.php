@@ -33,21 +33,8 @@
         <div id="lucky-mask-demo" style="position: absolute;z-index: 1000000;left: 0px;top: 0px;bottom: 0px;right: 0px; background: rgba(255, 255, 255, 0.8); text-align: center;font-size: 40px;align-items:center;justify-content: center;display: none;">Downloading</div>
         <div id="lucky-mask-export" style="position: absolute;z-index: 1000000;left: 0px;top: 0px;bottom: 0px;right: 0px; background: rgba(255, 255, 255, 0.8); text-align: center;font-size: 40px;align-items:center;justify-content: center;display: none;">Exporting</div>
         <p style="text-align:center; font-family: consolas, monospace;"> 
-            <input style="font-size:16px;" type="file" id="Luckyexcel-demo-file" name="Luckyexcel-demo-file" change="demoHandler" /> 
-            Or Load remote xlsx file: 
-            <select style="height: 27px;top: -2px;position: relative; font-family: consolas, monospace; box-sizing: border-box;" id="Luckyexcel-select-demo"> 
-                <option value="">select a demo</option> 
-                <option value="https://minio.cnbabylon.com/public/luckysheet/money-manager-2.xlsx">Money Manager.xlsx</option> 
-                <option value="https://minio.cnbabylon.com/public/luckysheet/Activity%20costs%20tracker.xlsx">Activity costs tracker.xlsx</option>
-                <option value="https://minio.cnbabylon.com/public/luckysheet/House%20cleaning%20checklist.xlsx">House cleaning checklist.xlsx</option>
-                <option value="https://minio.cnbabylon.com/public/luckysheet/Student%20assignment%20planner.xlsx">Student assignment planner.xlsx</option>
-                <option value="https://minio.cnbabylon.com/public/luckysheet/Credit%20card%20tracker.xlsx">Credit card tracker.xlsx</option>
-                <option value="https://minio.cnbabylon.com/public/luckysheet/Blue%20timesheet.xlsx">Blue timesheet.xlsx</option>
-                <option value="https://minio.cnbabylon.com/public/luckysheet/Student%20calendar%20%28Mon%29.xlsx">Student calendar (Mon).xlsx</option>
-                <option value="https://minio.cnbabylon.com/public/luckysheet/Blue%20mileage%20and%20expense%20report.xlsx">Blue mileage and expense report.xlsx</option> 
-            </select> 
-            <a href="javascript:void(0)" id="Luckyexcel-downlod-file">Download</a>
-            <a href="javascript:void(0)" id="Luckyexcel-export-xlsx">Export</a>
+            <input style="font-size: 16px; width: 102px;" type="file" id="Luckyexcel-demo-file" name="Luckyexcel-demo-file" change="demoHandler" /> 
+            <a href="javascript:void(0)" id="Luckyexcel-export-xlsx" style="text-decoration: none;">Export</a>
         </p>
         <div id="luckysheet" style="margin:0px;padding:0px;position:absolute;width:100%;left: 0px;top: 50px;bottom: 0px;outline: none;"></div>
         <script src="./luckysheet/luckyexcel.umd.js"></script>

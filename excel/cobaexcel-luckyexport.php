@@ -884,7 +884,7 @@ if(isset($_SERVER) && isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_MET
                 $rowlen_info = (array) $json_all[$i]->config->rowlen;
                 $rowlen_info_keys = array_keys($rowlen_info);
                 for($j = 0; $j < sizeof($rowlen_info_keys); $j++){
-                    $newsheet->getRowDimension(($rowlen_info_keys[$j] + 1))->setRowHeight(ceil($rowlen_info[$rowlen_info_keys[$j]]));
+                    $newsheet->getRowDimension(($rowlen_info_keys[$j] + 1))->setRowHeight(ceil($rowlen_info[$rowlen_info_keys[$j]] / 1.5));
                 }
             }
         }
@@ -955,15 +955,47 @@ if(isset($_SERVER) && isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_MET
                 echo "COLUMNLEN 0 : " . print_r($json_all[$i]->config->columnlen, true) . "\n";
                 echo "PLUS COLUMN WIDTH : ". $plus_column_width . "\n";
                 echo "ACTUAL X : " . $actual_x . "\n";
+                
+                $plus_column_height = 0;
+                $actual_y = 0;
+                $temp_plus_y = 0;
+                $coordinate_row = 1;
+                for($k = 0; $k < 1000; $k++){
+                    if(isset($json_all[$i]->config->rowhidden) && ((is_object($json_all[$i]->config->rowhidden) && isset($json_all[$i]->config->rowhidden->{$k})) || (is_array($json_all[$i]->config->rowhidden) && isset($json_all[$i]->config->rowhidden[$k])))){
+                        $plus_column_height = $plus_column_height + 0;
+                        $temp_plus_y = 4;
+                    } else {
+                        if((is_object($json_all[$i]->config->rowlen) && isset($json_all[$i]->config->rowlen->{$k})) || (is_array($json_all[$i]->config->rowlen) && isset($json_all[$i]->config->rowlen[$k]))){
+                            if(is_array($json_all[$i]->config->rowlen)){
+                                $plus_column_height = $plus_column_height + $json_all[$i]->config->rowlen[$k];
+                                $temp_plus_y = $json_all[$i]->config->rowlen[$k];
+                            }
+                            if(is_object($json_all[$i]->config->rowlen)){
+                                $plus_column_height = $plus_column_height + $json_all[$i]->config->rowlen->{$k};
+                                $temp_plus_y = $json_all[$i]->config->rowlen->{$k};
+                            }
+                        } else {
+                            $plus_column_height = $plus_column_height + 20;
+                            $temp_plus_y = 20;
+                            
+                        }
+                    }
+                    if($pos_y_default < $plus_column_height){
+                        $actual_y = $pos_y_default - ($plus_column_height - $temp_plus_y);
+                        $coordinate_row = ($k + 1);
+                        break;
+                    }
+                }
+                
                 $objDrawing = new PHPExcel_Worksheet_Drawing();
                 $objDrawing->setWorksheet($newsheet);
-                $objDrawing->setCoordinates($coordinate_column . "1");
+                $objDrawing->setCoordinates($coordinate_column . $coordinate_row);
                 $objDrawing->setName('Picture');
                 $objDrawing->setDescription('Picture');
                 $logo = __DIR__."/images/" . $name_file;
                 $objDrawing->setPath($logo);
                 $objDrawing->setOffsetX($actual_x); // this function has no effect 
-                $objDrawing->setOffsetY($pos_y_default); // this function has no effect 
+                $objDrawing->setOffsetY($actual_y); // this function has no effect 
                 $objDrawing->setHeight($height_crop);
                 $objDrawing->setWidth($width_crop);
                 echo $pos_x_default . "\n";
